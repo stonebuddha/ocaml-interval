@@ -19,6 +19,8 @@
     If not, see <http://www.gnu.org/licenses/>.
 *)
 
+module Interval = Interval_lib
+
 (* [min] and [max], specialized to floats (faster).
    NaN do dot need to be handled (see [I.v]). *)
 let[@inline] fmin (a: float) (b: float) = if a <= b then a else b

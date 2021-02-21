@@ -25,6 +25,8 @@
    (Trigonometric functions depend on argument reduction which is
    performed differently.) *)
 
+module Interval = Interval_lib
+
 open Interval
 module Low = Fpu.Low
 module High = Fpu.High
